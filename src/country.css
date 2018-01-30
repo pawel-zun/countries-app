@@ -1,6 +1,7 @@
 #root {
     background: #eee;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
 }
 
 .country-wrapper {
@@ -8,7 +9,7 @@
     width: 300px;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.13);
-    margin: 20px auto;
+    margin: 20px auto 40px;
 }
 
 header {
@@ -82,16 +83,24 @@ h2 {
 }
 
 .countries-list {
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .single-country {
     width: 26%;
-    height: 300px;
-    margin-top: 50px;
+    margin: 50px 10px 25px;
+    min-width: 250px;
+    position: relative;
+}
+
+.single-country button {
+    position: absolute;
+    top: -40px;
+    right: 0;
 }
 
 .country-logo-wrapper {
